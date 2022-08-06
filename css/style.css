@@ -1,0 +1,656 @@
+﻿html {
+	scroll-behavior:smooth;
+	padding:0 5px;
+}
+
+body {
+	background-color:#C2C2C2;
+	font-family:sans-serif;
+}
+
+/*Контейнер шапочного меню*/
+
+header {
+	width:100%;
+	min-height:40px;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:center;
+	background-color:#323232;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:2;
+	border:0.5px solid white;
+}
+
+/*Кнопки шапочного меню*/
+
+header div {
+	margin:0 10px 0 10px;
+	display:flex;
+	width:120px;
+	height:30px;
+	background-color:#787878;
+	justify-content:center;
+	align-items:center;
+	border-radius:5px;
+	color:white;
+	text-shadow:1px 1px 1px black;
+	font-weight:600;
+	border:1px solid black;
+}
+
+header div:hover {
+	cursor:pointer;
+	box-shadow:0px 0px 3px white;
+}
+
+header div:active {
+	background-color:#C2C2C2;
+}
+
+/*Кнопка вверх*/
+
+.to_the_moon {
+	width:30px;
+	height:30px;
+	position:fixed;
+	bottom:50px;
+	right:50px;
+	color:black;
+	box-shadow:0 0 5px white;
+}
+
+/*Контейнер баннера*/
+
+.banner {
+	margin:45px 0 0 0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:200px;
+	background:url(../img/banner.jpeg) 50% 50%;
+	background-size:cover;
+	border-radius:5px;
+}
+
+/*Название на баннере*/
+
+.banner span {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size:80px;
+	font-weight:600;
+	color:white;
+	text-shadow:0px 10px 10px black, 0px -10px 10px black;
+}
+
+/*Контейнер основного меню*/
+
+.menu {
+	width:100%;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-evenly;
+}
+
+/*Контейнер раздела меню*/
+
+.menu_block {
+	margin:10px 10px 10px 10px;
+	display:flex;
+	flex-flow:column;
+	width:300px;
+	height:410px;
+	background-color:#323232;
+	justify-content:center;
+	align-items:flex-start;
+	border-radius:5px;
+	color:white;
+	text-shadow:1px 1px 1px black;
+	font-weight:600;
+	border:1px solid black;
+}
+
+.menu_block:hover {
+	box-shadow:0 0 20px white;
+	border:1px solid white;
+}
+
+.menu_block:active {
+	background:#787878;
+}
+
+/*Картинка раздела меню*/
+
+.menu_pic {
+	margin:10px 10px 10px 10px;
+	display:flex;
+	width:280px;
+	height:300px;
+	background-color:white;
+	border:1px solid black;
+	border-radius:5px;
+}
+
+/*Пояснительный текст раздела меню*/
+
+.menu_note {
+	margin:0px 10px 10px 10px;
+	display:flex;
+	width:280px;
+	height:80px;
+	background-color:#787878;
+	border:1px solid black;
+ 	border-radius:5px;
+	padding:5px;
+	justfy-content:center;
+	align-items:center;
+}
+
+.menu_note span {
+	font-size:24px;
+	text-align:center;
+	font-weight:500;
+	text-shadow:2px 2px 2px black;
+	margin:0 auto;
+}
+
+/*Картинки основного меню*/
+
+#menu_pic_priem {
+	background-image:url(../img/priem7.jpg);
+	background-size:cover;
+}
+
+#menu_pic_glass {
+	background-image:url(../img/glass_vitrina3.jpg);
+	background-size:cover;
+}
+
+#menu_pic_rejim_raboti {
+	background-image:url(../img/Rejim_raboti.jpg);
+	background-size:cover;
+}
+
+#menu_pic_contacts {
+	background-image:url(../img/contacts.jpg);
+	background-size:cover;
+}
+
+/*Блок услуги*/
+
+#uslugi {
+	display:flex;
+	flex-flow:column wrap;
+	width:100%;
+	padding:50px 0 0 0;
+	align-items:center;
+	text-shadow:0px 10px 10px black, 0px -10px 10px black;
+}
+
+#uslugi1 {
+	display:flex;
+	flex-flow:column wrap;
+	width:100%;
+	padding:50px 0 0 0;
+	align-items:center;
+	text-shadow:0px 10px 10px black, 0px -10px 10px black;
+}
+
+/*Контейнер блока услуги*/
+
+.block_uslugi {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	max-width:880px;
+}
+
+
+/*Картинка в блоке услуги*/
+
+.block_uslugi_pic {
+	width:300px;
+	height:300px;
+	border:2px solid #323232;
+	border-radius:5px;
+	background-size:cover;
+	margin:5px;
+}
+
+#anna {
+	background-image:url(../img/anna.jpg);
+}
+
+#oborudovanie1 {
+	background-image:url(../img/oborudovanie1.jpg);
+}
+
+#oborudovanie2 {
+	background-image:url(../img/oborudovanie2.jpg);
+}
+
+#oborudovanie3 {
+	background-image:url(../img/oborudovanie3.jpg);
+}
+
+#oborudovanie4 {
+	background-image:url(../img/oborudovanie4.jpg);
+}
+
+#oborudovanie5 {
+	background-image:url(../img/oborudovanie5.jpg);
+}
+
+/*Текст блока услуги*/
+
+.block_uslugi_text {
+	max-width:560px;
+	min-height:300px;
+	background-color:#323232;
+	border-radius:5px;
+	margin:5px;
+	padding:10px;
+	color:white;
+	font-size:16px;
+	font-weight:500;
+	text-shadow:1px 1px 1px grey;
+	line-height:1.5;
+	letter-spacing:2px;
+}
+
+.block_uslugi_text p {
+	text-align:center;
+	margin:0 0 10px 0;
+}
+
+.block_uslugi_text ul li {
+	margin:0 0 5px 0;
+	font-style:italic;
+}
+
+.j1 {
+	box-shadow:5px 5px 5px white, -1px -1px 5px white;
+}
+
+.block_uslugi_text ul li:before {
+	content:"";
+	display:inline-block;
+	background:url(../img/check.png);
+	width:20px;
+	height:20px;
+	background-size:cover;
+	margin:0 10px 0 0;
+}
+
+.block_uslugi_text p span {
+	text-decoration:underline;
+	font-weight:600;
+	text-shadow:0px 0px 5px yellow;
+}
+
+.block_uslugi_price {
+	display:flex;
+	flex-flow:column wrap;
+	max-width:1560px;
+	background-color:#323232;
+	border-radius:5px;
+	padding:10px;
+	color:white;
+	font-size:20px;
+	font-weight:500;
+	text-shadow:1px 1px 1px grey;
+	line-height:1.5;
+	letter-spacing:2px;
+	margin: 5px 0 0 0;
+}
+
+.uslugi_title {
+	align-self:center;
+	border-radius:5px;
+	background-color:#787878;
+	padding:5px;
+	width:100%;
+	text-align:center;
+	font-size:30px;
+	text-shadow: -3px 0 1px black, 3px 0 1px black;
+}
+
+.uslugi_title a:hover {
+	text-shadow: -30px 0 5px white, 30px 0 5px white;
+	transition:0.8s;
+}
+
+.block_price {
+	border:1px solid white;
+	margin:10px 0 0 0;
+	border-radius:5px;
+	padding:10px;
+}
+
+.block_price ul li {
+	list-style:square;
+	margin:0 0 0 20px;
+}
+
+.block_price span {
+	background-color:#787878;
+	text-shadow:2px 2px 1px black;
+}
+
+.block_price ul li {
+	line-height:2;
+}
+
+/*Блок товары*/
+
+.container_vsegda_v_prodazhe {
+	display:flex;
+	flex-flow:column wrap;
+	width:100%;
+	margin:5px 0 0 0;
+	align-items:center;
+}
+
+.shop {
+	display:flex;
+	flex-flow: row wrap;
+	width:100%;
+	margin:5px 0 0 0;
+}
+
+.vsegda_v_prodazhe {
+	display:flex;
+	border-radius:5px;
+	color:white;
+	text-shadow:1px 1px 1px black;
+	font-weight:600;
+	font-size:50px;
+	padding:10px;
+	justify-content:center;
+	width:100%;
+}
+
+.menu_block1 {
+	margin:10px 10px 10px 10px;
+	display:flex;
+	flex-flow:column;
+	width:300px;
+	height:410px;
+	background-color:#323232;
+	justify-content:center;
+	align-items:flex-start;
+	border-radius:5px;
+	color:white;
+	text-shadow:1px 1px 1px black;
+	font-weight:600;
+	border:1px solid black;
+
+
+}
+
+.vsegda_v_prodazhe_goods {
+	display:flex;
+	color:white;
+	font-weight:600;
+	font-size:50px;
+	padding:50px 0;
+	justify-content:center;
+	width:100%;
+	text-shadow:0px 10px 10px black, 0px -10px 10px black;
+	text-align: center;
+}
+
+#opravi {
+	background-image:url(../img/oprava1.png);
+	background-size:cover;
+}
+
+#glass {
+	background-image:url(../img/oprava2.jpg);
+	background-size:cover;
+}
+
+#sunglass {
+	background-image:url(../img/sunglass3.jpg);
+	background-size:cover;
+}
+
+#linzi {
+	background-image:url(../img/linzi2.jpg);
+	background-size:cover;
+	background-position:-60px;
+}
+
+#sredstva {
+	background-image:url(../img/sredstva1.jpg);
+	background-size:cover;
+}
+
+#soputstvushie {
+	background-image:url(../img/aksessuar1.jpg);
+	background-size:cover;
+}
+
+/*Контейнер режим работы*/
+
+.container_rezhim_raboti {
+	display:flex;
+	flex-flow:column wrap;
+	width:100%;
+}
+
+#rezhim_raboti {
+	display:flex;
+	color:white;
+	font-weight:600;
+	font-size:50px;
+	padding:50px 0;
+	justify-content:center;
+	width:100%;
+	text-shadow:0px 10px 10px black, 0px -10px 10px black;
+	text-align: center;
+}
+
+.sub_container {
+	display:flex;
+	width: 100%;
+	flex-flow:row wrap;
+	justify-content:center;
+}
+
+.shema {
+	display:flex;
+	flex-flow: column wrap;
+	align-items:center;
+	background-color:#323232;
+	margin:10px;
+	max-width:560px;
+	width: 100%;
+ 	border-radius:5px;
+ 	height: min-content;
+}
+
+.rezhim_raboti {
+	display:flex;
+	flex-flow:column nowrap;
+	align-items:center;
+	background-color:#323232;
+	margin:10px;
+	max-width:560px;
+	width: 100%;
+ 	border-radius:5px;
+ 	height: min-content;
+}
+
+.zagolovok_rezhim_raboti {
+	margin:10px;
+	display:flex;
+	height:80px;
+	width: 93%;
+	background-color:#787878;
+	border:1px solid black;
+ 	border-radius:5px;
+	padding:5px;
+	justfy-content:center;
+	align-items:center;
+}
+
+.zagolovok_rezhim_raboti span {
+	font-size:24px;
+	text-align:center;
+	font-weight:500;
+	text-shadow:2px 2px 2px black;
+	margin:0 auto;
+	color:white;
+}
+
+.map {
+	margin:5px;
+}
+
+.adres {
+	color:white;
+	border:1px solid white;
+	font-weight:500;
+	font-size:18px;
+	padding:10px;
+	margin:0 0 10px 0;
+	max-width:540px;
+	width: 93%;
+	border-radius:5px;
+}
+
+.rezhim_raboti_list {
+	color:white;
+	border:1px solid white;
+	font-weight:500;
+	font-size:18px;
+	padding:10px;
+	margin:0 0 10px 0;
+	max-width:540px;
+	width: 93%;
+	border-radius:5px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.rezhim_raboti_list ul {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.rezhim_raboti_list ul li {
+	display:inline-block;
+	line-height:3.5;
+}
+
+.rezhim_raboti_list ul li:before {
+	content:"";
+	display:inline-block;
+	background:url(../img/check.png);
+	width:25px;
+	height:25px;
+	background-size:cover;
+}
+
+/*Блок контакты*/
+
+.container_contacts {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: center;
+	width:100%;
+	padding:0 0 40px 0;
+}
+
+#contacts {
+	display:flex;
+	color:white;
+	font-weight:600;
+	font-size:50px;
+	padding:50px 0;
+	justify-content:center;
+	width:100%;
+	text-shadow:0px 10px 10px black, 0px -10px 10px black;
+	text-align: center;
+}
+
+.tel {
+	display:inline-block;
+	margin:0 auto;
+}
+
+.tel:before {
+	content:"";
+	display:inline-block;
+	margin:auto 10px auto 10px;
+	background:url(../img/green_phone.png);
+	width:25px;
+	height:25px;
+	background-size:cover;
+}
+
+.tel:hover:before{
+	transform: rotate(360deg);
+	transition: 0.5s;
+}
+
+.tel:hover {
+	text-shadow: -10px 0 10px white, 10px 0 10px white;
+	transition:0.5s;
+}
+
+.vk {
+	display:inline-block;
+	margin:0 auto;
+}
+
+.vk:before {
+	content:"";
+	display:inline-block;
+	margin:auto 10px auto 10px;
+	background:url(../img/vk.png);
+	width:25px;
+	height:25px;
+	border-radius:5px;
+	background-size:cover;
+}
+
+.vk:hover:before {
+	transform: rotate(360deg);
+	transition: 0.5s;
+}
+
+.vk:hover {
+	text-shadow: -10px 0 10px white, 10px 0 10px white;
+	transition:0.5s;
+}
+
+footer {
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+	justify-content:center;
+	background:#323232;
+	width:100%;
+	height:20px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	border:0.5px solid white;
+}
+
+footer div {
+	display:inline-block;
+	color:white;
+	font-size:10px;
+}
